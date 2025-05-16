@@ -1,0 +1,241 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+display: flex;
+font-family: Arial, Helvetica, sans-serif;
+background-color:rgb(44, 22, 44);
+color: white;
+height: 100vh;
+
+}
+       
+    
+#navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 25%;
+  padding-bottom:50px;
+}
+
+#navbar header {
+    display: flex;
+    border-right: 15px solid white;
+    padding: 15px 5px;
+    font-size: 21px;
+    text-align: center;
+    
+  }
+
+.scroll-container{
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.nav-link{
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 0;
+  color: rgb(230, 145, 145);
+  border-top: thin solid #777;
+  font-size:25px;
+}
+
+.nav-link:hover{
+  background-color:rgb(230, 145, 145);
+  color:rgb(236, 213, 236);
+  font-weight: 800;
+  }
+
+.main-section{
+  padding-left: 27%;
+  margin: 20px auto;
+  overflow: hidden;
+  flex-grow: 1;
+  padding-bottom: 1.5rem;
+  }
+
+.main-section header{
+  font-size: 28px;
+  text-align: left;
+  padding: 15px 10px 15px 10px;
+  color: #777;
+  }
+
+.main-section p{
+  padding: 12px 20px;
+  font-size: 21px;
+}
+        
+.example{
+  font-style: italic;
+  padding: 20px  20px ;
+  font-size: 20px;
+  text-decoration: underline;
+
+  }
+
+.main-section code {
+  display: block;
+  max-width: 100%;
+  font-size: 20px;
+  white-space: pre-wrap; 
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  
+  font-family: 'Courier New', Courier, monospace;
+  border-left: 5px solid white; 
+  background-color: rgb(95, 64, 95);
+  margin: 20px 10px;
+  padding: 15px;
+  border-radius: 2%;
+          
+}
+
+
+.main-section .comment{
+  font-style: italic;
+  font-weight: 900;
+  font-size: 20px;
+  color: #777;
+  
+ }
+
+.main-section .bold{
+  font-weight: 600;
+}
+
+.main-section .italics{
+  font-style: italic;
+}
+
+.main-section ul{
+  padding-left: 55px;
+}
+
+.main-section li{
+  padding: 10px 5px;
+  font-size: 19px;
+}
+
+.table_container{
+  width: 100%;
+  margin: 20px 0;
+  overflow-x: auto;
+  padding: 0 20px
+}
+
+.main-section  table {
+
+border-collapse: collapse;
+margin:0 auto;
+
+}
+
+.main-section th,td{
+  padding: 10px 1px;
+  font-size: 16px;
+}
+
+.main-section td{
+  background-color: rgb(230, 145, 145);
+}
+
+
+.main-section thead th{
+  background-color: #3f3f3f;
+  text-align: center;
+  
+}
+
+.main-section tbody th{
+  background-color: #858585;
+  text-align: center;
+  font-style: italic;
+  
+}
+    
+  .main-section tbody td{
+    text-align: left;
+    padding-left: 8px;
+  }
+
+@media (max-width: 900px) {
+  body {
+   flex-direction: column;
+   height: auto;
+}
+  
+  #navbar {
+    position: relative;
+    width: 100%;
+    overflow: hidden; 
+    border-right: none;
+    }
+    
+  .scroll-container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto; 
+    max-height: 200px; 
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+  }
+
+  #Introduction{
+    margin-top: -220px;
+  }
+  
+.nav-link {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-bottom: thin solid #777;
+    
+    font-size: 22px;
+    padding: 10px 15px;
+}
+
+    
+.main-section {
+    padding: 0 20px;
+    width: 100%;
+    overflow: hidden; 
+}
+
+#navbar header {
+    font-size:28px;
+    display: flex;
+    justify-content: center;
+}
+ .nav-link{
+    font-size:28px;
+  }
+
+
+}
+
+ @media (max-width: 500px) {
+    body{
+    font-size: 20px;
+  }
+
+  .main-section table,
+     thead,
+    tbody,
+     th, td,tr {
+    display: block;
+  }
+  .main-section th {
+    text-align: left;
+  }
+ 
+}
+
